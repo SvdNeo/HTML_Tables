@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Table 1</title>
-    <style>
+    <!-- <style>
         .student_marks{
             width:500px;
             border: 1px solid blue;
         }
-    </style>
+    </style> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Marks Sheet</h1>
-    <table class="student_marks">
-        <tbody>
+<body class="flex items-center justify-center h-screen">
+    <div class="container mx-auto flex flex-col ">
+    <h1 class="font-bold text-2xl mx-auto w-full sm:w-[600px] mb-4 text-center ">Marks Sheet</h1>
+    <table class=" w-full sm:w-[600px] border-2 border-black mx-auto">
+       
             <tr>
                 <td>Name</td>
                 <td>Maths</td>
@@ -59,7 +61,8 @@
                 <td>78</td>
                 <td>93</td>
             </tr>
-        </tbody>
+        
     </table>
+</div>
 </body>
 </html>
